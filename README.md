@@ -1,3 +1,4 @@
+# Docker setup
 ```r
 > system("RD CMD config CXX")
 g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr
