@@ -1,49 +1,49 @@
 Started by user r-hub Jenkins admin
-Building remotely on 10.2.0.5-f5139560 (slave swarm linux) in workspace /home/ubuntu/workspace/mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55
-[mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55] $ /bin/sh -xe /tmp/hudson5957672568127363276.sh
+Building remotely on 10.2.0.6-d57693d5 (slave swarm linux) in workspace /home/ubuntu/workspace/mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0
+[mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0] $ /bin/sh -xe /tmp/hudson7551661475959897413.sh
 +R-HUB-R-HUB-R-HUBdate -u +%Y-%m-%dT%H:%M:%SZ
-+R-HUB-R-HUB-R-HUBwget https://builder.r-hub.io/build/in-progress/mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/2017-03-14T16:12:19Z
---2017-03-14 16:12:19--  https://builder.r-hub.io/build/in-progress/mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/2017-03-14T16:12:19Z
++R-HUB-R-HUB-R-HUBwget https://builder.r-hub.io/build/in-progress/mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/2017-03-14T16:17:51Z
+--2017-03-14 16:17:51--  https://builder.r-hub.io/build/in-progress/mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/2017-03-14T16:17:51Z
 Resolving builder.r-hub.io (builder.r-hub.io)... 54.67.48.72
 Connecting to builder.r-hub.io (builder.r-hub.io)|54.67.48.72|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Syntax error in Set-Cookie: r-hub frontend=s%3A4622860a-fe7f-4161-aa33-d91ab065f07c.1diiaiTgbg%2BtHXpW8qp5x%2FdMlFLp2N2xFgpPkezfZcw; Path=/; Expires=Wed, 15 Mar 2017 02:19:22 GMT at position 0.
+Syntax error in Set-Cookie: r-hub frontend=s%3A094fe736-a8ce-481e-b46f-f31ef46900e2.plXd1hsg21GLCh1bqD7nFeRGdY21c2pQEdQcvYXpxh8; Path=/; Expires=Wed, 15 Mar 2017 02:24:54 GMT at position 0.
 Length: unspecified [application/json]
-Saving to: '2017-03-14T16:12:19Z'
+Saving to: '2017-03-14T16:17:51Z'
 
-     0K                                                        1.43M=0s
+     0K                                                        1.47M=0s
 
-2017-03-14 16:12:19 (1.43 MB/s) - '2017-03-14T16:12:19Z' saved [15]
+2017-03-14 16:17:52 (1.47 MB/s) - '2017-03-14T16:17:51Z' saved [15]
 
 +R-HUB-R-HUB-R-HUBdocker run --user docker --rm rhub/rocker-gcc-san bash -c echo $RHUB_PLATFORM
 +R-HUB-R-HUB-R-HUBexport RHUB_PLATFORM=linux-x86_64-debian-gcc
 +R-HUB-R-HUB-R-HUBecho >>>>>==================== Downloading and unpacking package file
 >>>>>==================== Downloading and unpacking package file
-+R-HUB-R-HUB-R-HUBwget -O mrgsolve_0.8.5.tar.gz http://builder.r-hub.io/file/aa3d4d6c6c8a44c98e31aa31bff034f2
---2017-03-14 16:12:20--  http://builder.r-hub.io/file/aa3d4d6c6c8a44c98e31aa31bff034f2
++R-HUB-R-HUB-R-HUBwget -O mrgsolve_0.8.5.tar.gz http://builder.r-hub.io/file/0e6d48161a420390950c7be4eeab50c0
+--2017-03-14 16:17:53--  http://builder.r-hub.io/file/0e6d48161a420390950c7be4eeab50c0
 Resolving builder.r-hub.io (builder.r-hub.io)... 54.67.48.72
 Connecting to builder.r-hub.io (builder.r-hub.io)|54.67.48.72|:80... connected.
 HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://builder.r-hub.io:443/file/aa3d4d6c6c8a44c98e31aa31bff034f2 [following]
---2017-03-14 16:12:20--  https://builder.r-hub.io/file/aa3d4d6c6c8a44c98e31aa31bff034f2
+Location: https://builder.r-hub.io:443/file/0e6d48161a420390950c7be4eeab50c0 [following]
+--2017-03-14 16:17:53--  https://builder.r-hub.io/file/0e6d48161a420390950c7be4eeab50c0
 Connecting to builder.r-hub.io (builder.r-hub.io)|54.67.48.72|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Syntax error in Set-Cookie: r-hub frontend=s%3Ad5f3648c-b1e1-4f29-8619-1f58f9f58e17.eO9Tgg0dAOt35glhW6lMhL9StFz%2Fs5PLj4yEHFRVzNM; Path=/; Expires=Wed, 15 Mar 2017 02:19:23 GMT at position 0.
-Length: 348961 (341K) [application/octet-stream]
+Syntax error in Set-Cookie: r-hub frontend=s%3Aa0b4621f-a2ff-4a10-8116-ff44a7db6d7c.RL37o7yEOAaIn54Ke%2FpLTufJhCZQXqRHltFYdZ8EcqM; Path=/; Expires=Wed, 15 Mar 2017 02:24:56 GMT at position 0.
+Length: 358045 (350K) [application/octet-stream]
 Saving to: 'mrgsolve_0.8.5.tar.gz'
 
-     0K .......... .......... .......... .......... .......... 14% 12.9M 0s
-    50K .......... .......... .......... .......... .......... 29% 12.2M 0s
-   100K .......... .......... .......... .......... .......... 44% 23.1M 0s
-   150K .......... .......... .......... .......... .......... 58% 12.3M 0s
-   200K .......... .......... .......... .......... .......... 73% 21.1M 0s
-   250K .......... .......... .......... .......... .......... 88% 13.2M 0s
-   300K .......... .......... .......... ..........           100% 19.3M=0.02s
+     0K .......... .......... .......... .......... .......... 14% 11.8M 0s
+    50K .......... .......... .......... .......... .......... 28% 12.5M 0s
+   100K .......... .......... .......... .......... .......... 42% 21.5M 0s
+   150K .......... .......... .......... .......... .......... 57% 12.9M 0s
+   200K .......... .......... .......... .......... .......... 71% 13.7M 0s
+   250K .......... .......... .......... .......... .......... 85% 25.9M 0s
+   300K .......... .......... .......... .......... ......... 100% 26.5M=0.02s
 
-2017-03-14 16:12:20 (15.2 MB/s) - 'mrgsolve_0.8.5.tar.gz' saved [348961/348961]
+2017-03-14 16:17:53 (16.0 MB/s) - 'mrgsolve_0.8.5.tar.gz' saved [358045/358045]
 
-+R-HUB-R-HUB-R-HUBtar tzf+R-HUB-R-HUB-R-HUBgrep ^[^/]*/DESCRIPTION$
- mrgsolve_0.8.5.tar.gz
++R-HUB-R-HUB-R-HUBgrep ^[^/]*/DESCRIPTION$
++R-HUB-R-HUB-R-HUBtar tzf mrgsolve_0.8.5.tar.gz
 +R-HUB-R-HUB-R-HUBDESC=mrgsolve/DESCRIPTION
 +R-HUB-R-HUB-R-HUBtar xzf mrgsolve_0.8.5.tar.gz mrgsolve/DESCRIPTION
 +R-HUB-R-HUB-R-HUBecho >>>>>==================== Querying system requirements
@@ -56,20 +56,20 @@ Saving to: 'mrgsolve_0.8.5.tar.gz'
 +R-HUB-R-HUB-R-HUB[ ! -z export DEBIAN_FRONTEND=noninteractive; apt-get -y update && apt-get install -y libxml2-dev pandoc pandoc-citeproc ]
 +R-HUB-R-HUB-R-HUBecho export DEBIAN_FRONTEND=noninteractive; apt-get -y update && apt-get install -y libxml2-dev pandoc pandoc-citeproc
 +R-HUB-R-HUB-R-HUBpwd
-+R-HUB-R-HUB-R-HUBdocker run -d --user root --name mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-1 -v /home/ubuntu/workspace/mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/sysreqs.sh:/root/sysreqs.sh rhub/rocker-gcc-san bash /root/sysreqs.sh
-3b7e9d19f36e6436f623312096ed053b900fb98e2817b377ed3b23e3d440206b
-+R-HUB-R-HUB-R-HUBdocker attach mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-1
-Get:1 http://cdn-fastly.deb.debian.org/debian testing InRelease [184 kB]
-Get:2 http://cdn-fastly.deb.debian.org/debian testing-updates InRelease [88.5 kB]
-Get:3 http://security.debian.org testing/updates InRelease [62.9 kB]
-Get:4 http://cdn-fastly.deb.debian.org/debian testing/main amd64 Packages.diff/Index [27.9 kB]
-Get:4 http://cdn-fastly.deb.debian.org/debian testing/main amd64 Packages.diff/Index [27.9 kB]
-Get:5 http://cdn-fastly.deb.debian.org/debian testing/main amd64 Packages [9,509 kB]
-Get:6 http://cdn-fastly.deb.debian.org/debian sid InRelease [231 kB]
++R-HUB-R-HUB-R-HUBdocker run -d --user root --name mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-1 -v /home/ubuntu/workspace/mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/sysreqs.sh:/root/sysreqs.sh rhub/rocker-gcc-san bash /root/sysreqs.sh
+6ebf2734cccbe81019d7b9bb1d44e7766cb5b4aa64507448aa4e12637d57f33f
++R-HUB-R-HUB-R-HUBdocker attach mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-1
+Get:1 http://security.debian.org testing/updates InRelease [62.9 kB]
+Get:2 http://cdn-fastly.deb.debian.org/debian testing InRelease [184 kB]
+Get:3 http://cdn-fastly.deb.debian.org/debian testing-updates InRelease [88.5 kB]
+Get:5 http://cdn-fastly.deb.debian.org/debian testing/main amd64 Packages.diff/Index [27.9 kB]
+Get:5 http://cdn-fastly.deb.debian.org/debian testing/main amd64 Packages.diff/Index [27.9 kB]
+Get:4 http://cdn-fastly.deb.debian.org/debian sid InRelease [231 kB]
+Get:6 http://cdn-fastly.deb.debian.org/debian testing/main amd64 Packages [9,509 kB]
 Get:7 http://cdn-fastly.deb.debian.org/debian sid/main amd64 Packages.diff/Index [27.9 kB]
 Get:7 http://cdn-fastly.deb.debian.org/debian sid/main amd64 Packages.diff/Index [27.9 kB]
 Get:8 http://cdn-fastly.deb.debian.org/debian sid/main amd64 Packages [10.0 MB]
-Fetched 20.1 MB in 2s (6,921 kB/s)
+Fetched 20.1 MB in 2s (8,340 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -105,7 +105,7 @@ Get:9 http://cdn-fastly.deb.debian.org/debian testing/main amd64 pandoc amd64 1.
 Get:10 http://cdn-fastly.deb.debian.org/debian testing/main amd64 libghc-pandoc-citeproc-data all 0.10.2.2-1 [67.3 kB]
 Get:11 http://cdn-fastly.deb.debian.org/debian testing/main amd64 pandoc-citeproc amd64 0.10.2.2-1+b2 [7,561 kB]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 19.3 MB in 0s (23.9 MB/s)
+Fetched 19.3 MB in 0s (22.0 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 102983 files and directories currently installed.)
 Preparing to unpack .../00-libxml2_2.9.4+dfsg1-2.2_amd64.deb ...
 Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2) over (2.9.4+dfsg1-2) ...
@@ -153,17 +153,17 @@ Setting up liblua5.1-0:amd64 (5.1.5-8.1+b2) ...
 Setting up pandoc (1.17.2~dfsg-3) ...
 Setting up pandoc-citeproc (0.10.2.2-1+b2) ...
 Processing triggers for libc-bin (2.24-3) ...
-+R-HUB-R-HUB-R-HUBdocker commit mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-1
-+R-HUB-R-HUB-R-HUBnewimage=sha256:5eeef1619798baeb9fc2250e82c893b8517b50b62a3512637dd01d7e9190f120
++R-HUB-R-HUB-R-HUBdocker commit mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-1
++R-HUB-R-HUB-R-HUBnewimage=sha256:8c41e35167fbab81205cbcf2d43d2ca5963d4d64a1ff9ddade74064382e75482
 +R-HUB-R-HUB-R-HUBtempfile
-+R-HUB-R-HUB-R-HUBenv=/tmp/filefCA1RN
-+R-HUB-R-HUB-R-HUBecho url=http://builder.r-hub.io/file/aa3d4d6c6c8a44c98e31aa31bff034f2
++R-HUB-R-HUB-R-HUBenv=/tmp/file8OariL
++R-HUB-R-HUB-R-HUBecho url=http://builder.r-hub.io/file/0e6d48161a420390950c7be4eeab50c0
 +R-HUB-R-HUB-R-HUBecho package=mrgsolve_0.8.5.tar.gz
-+R-HUB-R-HUB-R-HUBecho checkArgs=--as-cran
-+R-HUB-R-HUB-R-HUBecho _R_CHECK_FORCE_SUGGESTS_=true
++R-HUB-R-HUB-R-HUBecho checkArgs=
++R-HUB-R-HUB-R-HUBecho 
 +R-HUB-R-HUB-R-HUBecho >>>>>==================== Starting Docker container
 >>>>>==================== Starting Docker container
-+R-HUB-R-HUB-R-HUBdocker run -i --user docker --env-file /tmp/filefCA1RN --name mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-2 sha256:5eeef1619798baeb9fc2250e82c893b8517b50b62a3512637dd01d7e9190f120 /bin/bash -l
++R-HUB-R-HUB-R-HUBdocker run -i --user docker --env-file /tmp/file8OariL --name mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-2 sha256:8c41e35167fbab81205cbcf2d43d2ca5963d4d64a1ff9ddade74064382e75482 /bin/bash -l
 ls: cannot access '/opt/R-*': No such file or directory
 
 R Under development (unstable) (2016-09-18 r71304) -- "Unsuffered Consequences"
@@ -204,14 +204,14 @@ Bioconductor version 3.5 (BiocInstaller 1.25.3), ?biocLite for help
 * DONE (BiocInstaller)
 
 The downloaded source packages are in
-	‘/tmp/RtmpCaDGgw/downloaded_packages’
+	‘/tmp/RtmpgMkIhQ/downloaded_packages’
 Bioconductor version 3.5 (BiocInstaller 1.25.3), ?biocLite for help
 > 
 > 
 >>>>>==================== Querying package dependencies
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 56854  100 56854    0     0   285k      0 --:--:-- --:--:-- --:--:--  284k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 56854    3  1925    0     0   5872      0  0:00:09 --:--:--  0:00:09  5868100 56854  100 56854    0     0   153k      0 --:--:-- --:--:-- --:--:--  153k
 
 R Under development (unstable) (2016-09-18 r71304) -- "Unsuffered Consequences"
 Copyright (C) 2016 The R Foundation for Statistical Computing
@@ -248,8 +248,8 @@ Installing package into ‘/home/docker/R’
 > 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   178  100   178    0     0  22297      0 --:--:-- --:--:-- --:--:-- 25428
-100  340k  100  340k    0     0  2196k      0 --:--:-- --:--:-- --:--:-- 2196k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   178  100   178    0     0  17634      0 --:--:-- --:--:-- --:--:-- 17800
+100  349k  100  349k    0     0  2058k      0 --:--:-- --:--:-- --:--:-- 2058k
 >>>>>==================== Installing package dependencies
 /bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer
@@ -2410,10 +2410,11 @@ packaged installation of ‘rmarkdown’ as ‘rmarkdown_1.3_R_x86_64-pc-linux-g
 * DONE (rmarkdown)
 
 The downloaded source packages are in
-	‘/tmp/RtmpxQuJqV/downloaded_packages’
+	‘/tmp/RtmpxHq2Ct/downloaded_packages’
 Installing package into ‘/home/docker/R’
 (as ‘lib’ is unspecified)
 * installing *source* package ‘mrgsolve’ ...
+** package ‘mrgsolve’ successfully unpacked and MD5 sums checked
 ** libs
 g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG -I../inst/include -I/usr/local/include -I"/home/docker/R/Rcpp/include" -I"/home/docker/R/RcppArmadillo/include" -I"/home/docker/R/BH/include"   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c RcppExports.cpp -o RcppExports.o
 g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG -I../inst/include -I/usr/local/include -I"/home/docker/R/Rcpp/include" -I"/home/docker/R/RcppArmadillo/include" -I"/home/docker/R/BH/include"   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c dataobject.cpp -o dataobject.o
@@ -2459,6 +2460,7 @@ packaged installation of ‘mrgsolve’ as ‘mrgsolve_0.8.5_R_x86_64-pc-linux-g
 About to run xvfb-run san.sh mrgsolve_0.8.5.tar.gz
 * installing to library ‘/home/docker/R’
 * installing *source* package ‘mrgsolve’ ...
+** package ‘mrgsolve’ successfully unpacked and MD5 sums checked
 ** libs
 g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG -I../inst/include -I/usr/local/include -I"/home/docker/R/Rcpp/include" -I"/home/docker/R/RcppArmadillo/include" -I"/home/docker/R/BH/include"   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c RcppExports.cpp -o RcppExports.o
 g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG -I../inst/include -I/usr/local/include -I"/home/docker/R/Rcpp/include" -I"/home/docker/R/RcppArmadillo/include" -I"/home/docker/R/BH/include"   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c dataobject.cpp -o dataobject.o
@@ -2629,7 +2631,7 @@ DONE ===========================================================================
 > 
 > proc.time()
    user  system elapsed 
- 30.048  16.060  47.769 
+ 30.028   4.768  36.706 
 Running examples
 > tools:::.createExdotR('mrgsolve', system.file(package = 'mrgsolve'))
   Extracting from parsed Rd's ..........
@@ -3646,7 +3648,7 @@ Compiling irm1 ... done.
 -------- mrgsolve model object (unix) --------
   Project: /home/docker/R/mrgsolve/models
   source:        irm1.cpp
-  shared object: irm1-so-11ca12be109 
+  shared object: irm1-so-11ca67a66162 
 
   compile date:  
   Time:          start: 0 end: 24 delta: 1
@@ -4044,30 +4046,30 @@ $sigma[[2]]
 [1] "EXPO"
 
 
-Time elapsed:  12.9 0.392 14.455 0.528 0.584 
+Time elapsed:  13.056 0.404 14.144 0.48 0.124 
 null device 
           1 
-+R-HUB-R-HUB-R-HUB+R-HUB-R-HUB-R-HUBecho mrgsolve_0.8.5.tar.gz
-sed s/_.*$//
++R-HUB-R-HUB-R-HUB+R-HUB-R-HUB-R-HUBsed s/_.*$//
+echo mrgsolve_0.8.5.tar.gz
 +R-HUB-R-HUB-R-HUBpkgname=mrgsolve
-+R-HUB-R-HUB-R-HUBrm -rf mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55
-+R-HUB-R-HUB-R-HUBmkdir -p mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55
-+R-HUB-R-HUB-R-HUBdocker cp mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-2:/home/docker/mrgsolve.Rcheck mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/
-+R-HUB-R-HUB-R-HUBmv mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/BH_1.62.0-1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/DBI_0.6_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/R6_2.2.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/RcppArmadillo_0.7.700.0.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/Rcpp_0.12.9_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/XML_3.98-1.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/assertthat_0.1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/backports_1.0.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/base64enc_0.1-3_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/bitops_1.0-6_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/caTools_1.17.1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/crayon_1.3.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/digest_0.6.12_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/dplyr_0.5.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/evaluate_0.10_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/highr_0.6_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/htmltools_0.3.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/jsonlite_1.3_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/knitr_1.15.1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/lattice_0.20-34_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/lazyeval_0.2.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/markdown_0.7.7_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/mime_0.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/mrgsolve_0.8.5.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/mrgsolve_0.8.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/praise_1.0.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/rmarkdown_1.3_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/rprojroot_1.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/stringi_1.1.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/stringr_1.2.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/testthat_1.0.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/tibble_1.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/mrgsolve.Rcheck/yaml_2.1.14_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/
-+R-HUB-R-HUB-R-HUBdocker rm mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-1
-mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-1
-+R-HUB-R-HUB-R-HUBdocker rm mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-2
-mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55-2
-+R-HUB-R-HUB-R-HUB+R-HUB-R-HUB-R-HUBgrep -q rhub
-echo sha256:5eeef1619798baeb9fc2250e82c893b8517b50b62a3512637dd01d7e9190f120
-+R-HUB-R-HUB-R-HUBdocker rmi sha256:5eeef1619798baeb9fc2250e82c893b8517b50b62a3512637dd01d7e9190f120
-Deleted: sha256:5eeef1619798baeb9fc2250e82c893b8517b50b62a3512637dd01d7e9190f120
-Deleted: sha256:e8b6552b7b8b7b912b9aae0d8cb6e00c66f361baeea5402ea0b8eabcdfa7aa8a
-SSH: Connecting from host [linux-builder-1]
++R-HUB-R-HUB-R-HUBrm -rf mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0
++R-HUB-R-HUB-R-HUBmkdir -p mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0
++R-HUB-R-HUB-R-HUBdocker cp mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-2:/home/docker/mrgsolve.Rcheck mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/
++R-HUB-R-HUB-R-HUBmv mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/BH_1.62.0-1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/DBI_0.6_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/R6_2.2.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/RcppArmadillo_0.7.700.0.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/Rcpp_0.12.9_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/XML_3.98-1.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/assertthat_0.1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/backports_1.0.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/base64enc_0.1-3_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/bitops_1.0-6_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/caTools_1.17.1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/crayon_1.3.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/digest_0.6.12_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/dplyr_0.5.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/evaluate_0.10_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/highr_0.6_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/htmltools_0.3.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/jsonlite_1.3_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/knitr_1.15.1_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/lattice_0.20-34_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/lazyeval_0.2.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/markdown_0.7.7_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/mime_0.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/mrgsolve_0.8.5.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/mrgsolve_0.8.5_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/praise_1.0.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/rmarkdown_1.3_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/rprojroot_1.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/stringi_1.1.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/stringr_1.2.0_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/testthat_1.0.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/tibble_1.2_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/mrgsolve.Rcheck/yaml_2.1.14_R_x86_64-pc-linux-gnu.tar.gz mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/
++R-HUB-R-HUB-R-HUBdocker rm mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-1
+mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-1
++R-HUB-R-HUB-R-HUBdocker rm mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-2
+mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0-2
++R-HUB-R-HUB-R-HUB+R-HUB-R-HUB-R-HUBecho sha256:8c41e35167fbab81205cbcf2d43d2ca5963d4d64a1ff9ddade74064382e75482
+grep -q rhub
++R-HUB-R-HUB-R-HUBdocker rmi sha256:8c41e35167fbab81205cbcf2d43d2ca5963d4d64a1ff9ddade74064382e75482
+Deleted: sha256:8c41e35167fbab81205cbcf2d43d2ca5963d4d64a1ff9ddade74064382e75482
+Deleted: sha256:a0d95ef0c2d372182e09efe02ed4b87909434e18e016d97035c445ec110dbc42
+SSH: Connecting from host [linux-buidler-2]
 SSH: Connecting with configuration [files] ...
 SSH: Disconnecting configuration [files] ...
 SSH: Transferred 33 file(s)
 Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
-Pinging https://builder.r-hub.io/build/SUCCESS/mrgsolve_0.8.5.tar.gz-e20d3dd72d1d43cf8248bc0c0bf26a55/2017-03-14T16:30:42Z
+Pinging https://builder.r-hub.io/build/SUCCESS/mrgsolve_0.8.5.tar.gz-0e6d48161a420390950c7be4eeab50c0/2017-03-14T16:34:43Z
 {"status":"ok"}
 Finished: SUCCESS
