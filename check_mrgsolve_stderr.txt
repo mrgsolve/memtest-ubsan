@@ -1,7 +1,0 @@
-  Running ‘testthat.R’
-
-See
-  ‘/mnt/mrgsolve.Rcheck/00check.log’
-for details.
-
-
