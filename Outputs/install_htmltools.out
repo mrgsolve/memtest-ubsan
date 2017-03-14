@@ -1,0 +1,14 @@
+* installing *source* package ‘htmltools’ ...
+** package ‘htmltools’ successfully unpacked and MD5 sums checked
+** libs
+g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG  -I"/mnt/Rlibs/Rcpp/include" -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c RcppExports.cpp -o RcppExports.o
+g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG  -I"/mnt/Rlibs/Rcpp/include" -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c template.cpp -o template.o
+g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o htmltools.so RcppExports.o template.o -L/usr/local/lib/R/lib -lR
+installing to /mnt/Library/htmltools/libs
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (htmltools)

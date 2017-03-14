@@ -1,0 +1,89 @@
+* installing *source* package ‘yaml’ ...
+** package ‘yaml’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c api.c -o api.o
+api.c: In function ‘yaml_document_delete’:
+api.c:1133:7: warning: variable ‘context’ set but not used [-Wunused-but-set-variable]
+     } context;
+       ^~~~~~~
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c dumper.c -o dumper.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c emitter.c -o emitter.o
+emitter.c: In function ‘yaml_emitter_write_plain_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^~~~~~~~~
+emitter.c:1933:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^~~~~~~~~~~
+emitter.c: In function ‘yaml_emitter_write_single_quoted_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^~~~~~~~~
+emitter.c:1994:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^~~~~~~~~~~
+emitter.c: In function ‘yaml_emitter_write_literal_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^~~~~~~~~
+emitter.c:2257:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^~~~~~~~~~~
+emitter.c: In function ‘yaml_emitter_write_folded_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^~~~~~~~~
+emitter.c:2306:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^~~~~~~~~~~
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c implicit.c -o implicit.o
+implicit.re: In function ‘find_implicit_tag’:
+implicit.re:12:31: warning: variable ‘limit’ set but not used [-Wunused-but-set-variable]
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c loader.c -o loader.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c parser.c -o parser.o
+parser.c: In function ‘yaml_parser_parse_block_sequence_entry’:
+parser.c:762:21: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+         yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                     ^~~~~~~~~~
+parser.c: In function ‘yaml_parser_parse_block_mapping_key’:
+parser.c:872:21: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+         yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                     ^~~~~~~~~~
+parser.c: In function ‘yaml_parser_parse_flow_sequence_entry’:
+parser.c:955:17: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+     yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                 ^~~~~~~~~~
+parser.c: In function ‘yaml_parser_parse_flow_mapping_key’:
+parser.c:1107:17: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+     yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                 ^~~~~~~~~~
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c r-ext.c -o r-ext.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c reader.c -o reader.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c scanner.c -o scanner.o
+scanner.c: In function ‘yaml_parser_decrease_flow_level’:
+scanner.c:1189:23: warning: variable ‘dummy_key’ set but not used [-Wunused-but-set-variable]
+     yaml_simple_key_t dummy_key;    /* Used to eliminate a compiler warning. */
+                       ^~~~~~~~~
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c writer.c -o writer.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o yaml.so api.o dumper.o emitter.o implicit.o loader.o parser.o r-ext.o reader.o scanner.o writer.o -L/usr/local/lib/R/lib -lR
+installing to /mnt/Library/yaml/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (yaml)

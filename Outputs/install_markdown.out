@@ -1,0 +1,25 @@
+* installing *source* package ‘markdown’ ...
+** package ‘markdown’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c Rbase64.c -o Rbase64.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c Rinit.c -o Rinit.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c Rmarkdown.c -o Rmarkdown.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c autolink.c -o autolink.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c buffer.c -o buffer.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c houdini_href_e.c -o houdini_href_e.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c houdini_html_e.c -o houdini_html_e.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c html.c -o html.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c html_smartypants.c -o html_smartypants.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c markdown.c -o markdown.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c stack.c -o stack.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o markdown.so Rbase64.o Rinit.o Rmarkdown.o autolink.o buffer.o houdini_href_e.o houdini_html_e.o html.o html_smartypants.o markdown.o stack.o -L/usr/local/lib/R/lib -lR
+installing to /mnt/Library/markdown/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (markdown)

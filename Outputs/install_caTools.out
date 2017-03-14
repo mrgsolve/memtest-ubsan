@@ -1,0 +1,15 @@
+* installing *source* package ‘caTools’ ...
+** package ‘caTools’ successfully unpacked and MD5 sums checked
+** libs
+g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c Gif2R.cpp -o Gif2R.o
+g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr  -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native  -c GifTools.cpp -o GifTools.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c runfunc.c -o runfunc.o
+g++ -fsanitize=address,undefined,bounds-strict -fno-omit-frame-pointer -fno-sanitize=object-size,vptr -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o caTools.so Gif2R.o GifTools.o runfunc.o -L/usr/local/lib/R/lib -lR
+installing to /mnt/Library/caTools/libs
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (caTools)

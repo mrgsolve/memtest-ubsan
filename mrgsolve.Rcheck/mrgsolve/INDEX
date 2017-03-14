@@ -1,0 +1,121 @@
+$,mrgmod-method         Create and work with parameter objects.
+%>%                     Forward pipe.
+BLOCK_PARSE             Functions to parse code blocks.
+PKMODEL                 Parse PKMODEL BLOCK data.
+Req                     Request simulated output.
+aboutsolver             About the ODEPACK differential equation solver
+                        used by mrgsolve.
+as.list,mrgmod-method   Coerce a model object to list.
+as_bmat                 Coerce R objects to block or diagonal matrices.
+as_data_set             Create a simulatinon data set from ev objects.
+as_deslist              Create a list of designs from a data frame.
+assign_ev               Replicate a list of events into a data set.
+blocks                  Return the code blocks from a model
+                        specification file.
+bmat                    Create matrices from vector input.
+c,matlist-method        Operations with matlist objects.
+c,tgrid-method          Operations with tgrid objects.
+cama                    Run the model cama function.
+carry_out               Select items to carry into simulated output.
+chain                   Functions for chaining commands together.
+cmt_list-class          S4 cmt_list class
+cmtn                    Get the compartment number from a compartment
+                        name.
+code                    Extract the code from a model.
+cvec                    Create create character vectors.
+data_set                Select and modify a data set for simulation.
+design                  Set observation designs for the simulation.
+details                 Extract model details.
+env_eval                Re-evaluate the code in the ENV block.
+env_get                 Return model environment.
+env_ls                  List objects in the model environment.
+env_update              Update objects in model environment.
+ev-class                S4 events class
+ev_days                 Schedule dosing events on days of the week.
+ev_ops                  Operations for ev objects.
+events                  Event objects for simulating PK and other
+                        interventions.
+exdatasets              Example input data sets.
+expand.idata            Create template data sets for simulation.
+file_show               Show model specification and C++ files.
+house                   Return a pre-compiled, PK/PD model.
+idata_set               Select and modify a idata set for simulation.
+init                    Methods for working with the model compartment
+                        list.
+is.mrgmod               Check if an object is a model object.
+is.mrgsims              Check if an object is mrgsim output.
+knobs                   Run sensitivity analysis on model settings.
+lctran                  Convert select upper case column names to lower
+                        case to conform to mrgsolve data expectations.
+loadso                  Load the model shared object.
+lower2matrix            Create a square numeric matrix from the
+                        lower-triangular elements.
+matlist                 Methods for working with matrix-list objects.
+matlist-class           S4 class matlist.
+mcRNG                   Set RNG to use L'Ecuyer-CMRG.
+mcode_cache             Write, compile, and load model code.
+merge.list              Merge two lists.
+mod                     Return the model object.
+modMATRIX               Create a matrix.
+modelparse              Parse model specification text.
+modlib                  Internal model library.
+modlib_details          modlib: PK/PD Model parameters, compartments,
+                        and output variables.
+modlib_pk               modlib: Pharmacokinetic models.
+modlib_pkpd             modlib: Pharmacokinetic / pharmacodynamic
+                        models.
+modlib_tmdd             modlib: Target mediated disposition model.
+modlib_viral            modlib: HCV viral dynamics models.
+modlist                 Create a modlist object.
+modlist-class           S4 class matlist.
+mread_cache             Read a model specification file.
+mrgmod-class            S4 class for mrgsolve model object.
+mrgsim                  Simulate from a model object.
+mrgsims                 Methods for working with 'mrgsims' objects.
+mrgsims-class           S4 class for mrgsolve simulation output.
+mrgsims_dplyr           Methods for handling output with dplyr verbs.
+mrgsolve                mrgsolve
+mrgsolve_example        Extract example model from system library
+mrgsolve_template       Create model specification file from template
+mvgauss                 Simulate from a multivariate normal
+                        distribution with mean zero.
+nmxml                   Get THETA, OMEGA and SIGMA from a completed
+                        NONMEM run
+numeric2diag            Create a diagonal numeric matrix from diagonal
+                        elements.
+numericlist             Methods for numericlist.
+numericlist-class       S4 class numeric list.
+obsaug                  Augment observations in the simulated output.
+obsonly                 Collect only observations in the simulated
+                        output.
+omega                   Manipulate OMEGA matrices.
+parameter_list-class    S4 parameter_list class
+pkmodel                 Simulate from 1- or 2-compartment PK model.
+plot,batch_mrgsims,missing-method
+                        Plot method for mrgsims objects.
+plot_mrgsims            Generate a quick plot of simulated data.
+qsim                    A quick simulation function.
+realize_addl            Make addl doses explicit in an event object or
+                        data set.
+recmatrix               Create a matrix of events for simulation.
+relocate                Update model or project in an model object.
+rename_cols             rename columns from vector for new names
+render                  Render a model to a document.
+reserved                Reserved words.
+revar                   Get model random effect variances and
+                        covariances.
+scrape_and_call         Scrape options and pass to function.
+scrape_opts             Scrape options from a code block.
+see                     Print model code to the console.
+show,modlist-method     Show a modlist object.
+show,mrgmod-method      Print model details.
+sigma                   Manipulate SIGMA matrices.
+simargs                 Access or clear arguments for calls to mrgsim.
+soloc                   Return the location of the model shared object.
+stime                   Get the times at which the model will be
+                        evaluated.
+stime,mrgmod-method     Create a simtime object.
+touch_funs              Get inits from compiled function.
+tscale                  Rescale time in the simulated output.
+update                  Get all names from a model object.
+valid_data              Validate and prepare data sets for simulation.

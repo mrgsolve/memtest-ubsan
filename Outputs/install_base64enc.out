@@ -1,0 +1,15 @@
+* installing *source* package ‘base64enc’ ...
+** package ‘base64enc’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c base64.c -o base64.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c uriencode.c -o uriencode.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -I/usr/local/lib/R/include -DNDEBUG   -I/usr/local/include   -fpic  -pipe -Wall -pedantic -O2 -mtune=native -fsanitize=address  -c utf8.c -o utf8.o
+gcc -std=gnu99 -fsanitize=address,undefined -fno-omit-frame-pointer -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o base64enc.so base64.o uriencode.o utf8.o -L/usr/local/lib/R/lib -lR
+installing to /mnt/Library/base64enc/libs
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (base64enc)
