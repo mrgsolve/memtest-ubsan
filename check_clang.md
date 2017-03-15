@@ -1,3 +1,21 @@
+### Setup
+```
+CC="clang -fsanitize=address,undefined -fno-sanitize=float-divide-by-zero -fno-omit-frame-pointer" \
+CXX="clang++ -stdlib=libc++ -fsanitize=address,undefined -fno-sanitize=float-divide-by-zero -fno-omit-frame-pointer" \
+CFLAGS="-g -O3 -Wall -pedantic -mtune=native" \
+FFLAGS="-g -O2 -mtune=native" \
+FCFLAGS="-g -O2 -mtune=native" \
+CXXFLAGS="-g -O3 -Wall -pedantic -mtune=native" \
+MAIN_LD="clang++ -stdlib=libc++ -fsanitize=undefined,address" \
+FC="gfortran" \
+F77="gfortran" \
+```
+```r
+> system("clang++ -v")
+clang version 3.8.1-18 (tags/RELEASE_381/final)
+```
+
+### Check result
 ```r
 
 
