@@ -15,7 +15,7 @@ F77="gfortran" \
 clang version 3.8.1-18 (tags/RELEASE_381/final)
 ```
 
-### Check result
+### Check result (just tests)
 ```r
 
 
